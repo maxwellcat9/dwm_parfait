@@ -12,15 +12,31 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+/* parfait fg */
+static const char col_1blueLight[]  = "#9CB3E6"; // 1
+static const char col_1green[]      = "#75E67A"; // 2
+static const char col_1pinkVivid[]  = "#E60262"; // 3
+static const char col_1tangerPNTS[] = "#E6A614"; // 4
+static const char col_1pinkDark[]   = "#A84770"; // 5
+static const char col_1blueDark[]   = "#1C346B"; // 6
+/* parfait bg */
+static const char col_2blueLight[]  = "#BCD2EB"; // 1
+static const char col_2green[]      = "#CAEBC3"; // 2
+static const char col_2pink[]       = "#E683CD"; // 3
+static const char col_2tanDark[]    = "#E6C895"; // 4
+static const char col_2lightGray[]  = "#AB97A6"; // 5
+static const char col_2blackGray[]  = "#4A5866"; // 6
+/* what is this */
 static const char *colors[][3]      = {
+/* WHAT IS THIS */
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-	[SchemeStatus]  = { col_gray3, col_gray1,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
-	[SchemeTagsSel]  = { col_gray4, col_cyan,  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
-	[SchemeTagsNorm]  = { col_gray3, col_gray1,  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
-	[SchemeInfoSel]  = { col_gray4, col_cyan,  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
-	[SchemeInfoNorm]  = { col_gray3, col_gray1,  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
+	[SchemeStatus]  = { col_2blueLight, col_1blueLight,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
+	[SchemeTagsSel]  = { col_2pink, col_1pinkVivid,  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
+	[SchemeTagsNorm]  = { col_2blackGray, col_1blueDark,  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
+	[SchemeInfoSel]  = { col_2green, col_1green,  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+	[SchemeInfoNorm]  = { col_2tanDark, col_1tangerPNTS,  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
 /* tagging */
